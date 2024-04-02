@@ -31,11 +31,11 @@ public class AuthenticationService implements IAuthenticationService, UserDetail
 
     @Override
     public boolean login(String username, String password) throws IOException {
-        Customer customer = authenticationRepository.findByUsername(username);
-        if(customer != null){
-            BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
-            return bc.matches(password, customer.getPassword());
-        }
+//        Customer customer = authenticationRepository.findByUsername(username);
+//        if(customer != null){
+//            BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
+//            return bc.matches(password, customer.getPassword());
+//        }
         return false;
     }
 
