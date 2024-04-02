@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgres://localhost:4003/primes
+    username: postrgres
+    password: password
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+      database-platform: org.hibernate.dialect.PostgresSQLDialect
+
+    sql:
+      init:
+        mode: always
+
+    server:
+      port: 8085
